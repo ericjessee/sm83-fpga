@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/eric/fpga/mojo-base-project-master/syn/instr_fetch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="instr_fetch_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wave_markers>
+      <marker time="1000000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/instr_fetch_tb/data_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/addr_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/data_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/addr_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_ready</obj_property>
+      <obj_property name="ObjectShortName">addr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/data_to_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_to_write[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_write[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/addr_to_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_to_write[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_to_write[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/sp_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sp_wr</obj_property>
+      <obj_property name="ObjectShortName">sp_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/sp_oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sp_oe</obj_property>
+      <obj_property name="ObjectShortName">sp_oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/sp_ldh" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sp_ldh</obj_property>
+      <obj_property name="ObjectShortName">sp_ldh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/sp_ld16" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sp_ld16</obj_property>
+      <obj_property name="ObjectShortName">sp_ld16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/a_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_wr</obj_property>
+      <obj_property name="ObjectShortName">a_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/a_oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_oe</obj_property>
+      <obj_property name="ObjectShortName">a_oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/instr_fetch_tb/rom_oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rom_oe</obj_property>
+      <obj_property name="ObjectShortName">rom_oe</obj_property>
+   </wvobject>
+</wave_config>

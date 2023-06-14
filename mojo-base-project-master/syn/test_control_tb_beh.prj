@@ -1,0 +1,6 @@
+verilog work "../src/cpu/regfile/regfile_top.v"
+verilog work "../src/cpu/incrementer.v"
+verilog work "../src/cpu/control/control.v"
+verilog work "../ipcore_dir/mem.v"
+verilog work "../src/cpu/control/test_control_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,3 @@
+verilog work "../src/timer.v"
+verilog work "../ipcore_dir/mem.v"
+verilog work "../src/mojo_top.v"

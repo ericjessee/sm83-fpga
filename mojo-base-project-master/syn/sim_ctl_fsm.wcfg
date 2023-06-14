@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/eric/fpga/mojo-base-project-master/syn/test_control_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_control_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/test_control_tb/data_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/addr_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_oe_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_oe_conn</obj_property>
+      <obj_property name="ObjectShortName">pc_oe_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_wr_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_wr_conn</obj_property>
+      <obj_property name="ObjectShortName">pc_wr_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_ldh_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_ldh_conn</obj_property>
+      <obj_property name="ObjectShortName">pc_ldh_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_ld16_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_ld16_conn</obj_property>
+      <obj_property name="ObjectShortName">pc_ld16_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/a_wr_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_wr_conn</obj_property>
+      <obj_property name="ObjectShortName">a_wr_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/a_oe_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_oe_conn</obj_property>
+      <obj_property name="ObjectShortName">a_oe_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rom_oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rom_oe</obj_property>
+      <obj_property name="ObjectShortName">rom_oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rom_cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rom_cs</obj_property>
+      <obj_property name="ObjectShortName">rom_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rom_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rom_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_en</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_tap_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_tap_en</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_tap_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_tap" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_tap[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_tap[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/const0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">const0</obj_property>
+      <obj_property name="ObjectShortName">const0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/const1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">const1</obj_property>
+      <obj_property name="ObjectShortName">const1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/const0_3bit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">const0_3bit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">const0_3bit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/data_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/addr_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_ready</obj_property>
+      <obj_property name="ObjectShortName">addr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/data_to_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_to_write[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_write[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/addr_to_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_to_write[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_to_write[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/reset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reset[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/reset_pc_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_pc_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_pc_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/reset_pc_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_pc_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_pc_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/inc_pc_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inc_pc_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inc_pc_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/inc_pc_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inc_pc_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inc_pc_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/fetch_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/fetch_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/fetch_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_c[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_c[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/decode_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">decode_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/load_byte_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">load_byte_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">load_byte_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/load_byte_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">load_byte_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">load_byte_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/load_byte_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">load_byte_c[15:0]</obj_property>
+      <obj_property name="ObjectShortName">load_byte_c[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/lda_d8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lda_d8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lda_d8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rom/douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/rom/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/regfile/a_reg/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">a reg conts</obj_property>
+   </wvobject>
+</wave_config>

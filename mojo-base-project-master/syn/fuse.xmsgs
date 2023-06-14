@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="835" delta="unknown" >"/home/eric/fpga/mojo-base-project-master/syn/../src/cpu/regfile/regfile_top.v" Line 131: Too many parameters for module instance <arg fmt="%s" index="1">Decoder_0</arg>
+</msg>
+
+</messages>
+
