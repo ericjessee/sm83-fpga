@@ -60,8 +60,17 @@ module control(
         load_byte_c = 16'hff0b;
 
     localparam[7:0]
-        //opcodes
-        lda_d8 = 8'h3e;
+        //opcodes--------------|
+        //8 bit immediate loads
+        ldc_d8 = 8'h0e,
+        lde_d8 = 8'h1e,
+        ldl_d8 = 8'h2e,
+        lda_d8 = 8'h3e,
+        ldb_d8 = 8'h06,
+        ldd_d8 = 8'h16,
+        ldh_d8 = 8'h26;
+
+
 
     always @(posedge clk, posedge rst) begin
         if(rst) begin
