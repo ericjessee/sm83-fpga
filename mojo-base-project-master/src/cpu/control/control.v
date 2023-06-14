@@ -145,8 +145,44 @@ module control(
         end
         decode_a: begin
             case(opcode)
+                ldc_d8: begin
+                    ld_reg <= reg_c;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
+                lde_d8: begin
+                    ld_reg <= reg_e;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
+                ldl_d8: begin
+                    ld_reg <= reg_l;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
                 lda_d8: begin
                     ld_reg <= reg_a;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
+                ldb_d8: begin
+                    ld_reg <= reg_b;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
+                ldd_d8: begin
+                    ld_reg <= reg_d;
+                    return_state <= load_byte_a;
+                    //increment pc to access the following byte
+                    next_state <= inc_pc_a;
+                end
+                ldh_d8: begin
+                    ld_reg <= reg_h;
                     return_state <= load_byte_a;
                     //increment pc to access the following byte
                     next_state <= inc_pc_a;
@@ -179,18 +215,5 @@ module control(
         end
     endcase
     end
-
-    //current status: I can read a single instruction from memory and execute it. 
-    //this is made possible by being able to use the program counter for memory access
-    //and incrementing it arbitrarily using the return_state var.
-    //is this the right way to go? or should I be using an address buffer,
-    //I could then write pc+some arbitrary value in order to access. 
-    //then instruction fetch is slower, unless i mux it
-    //still just mostly guessing how the cpu is supposed to work
-
-    //next: implement more instructions. -- jp, add, and cmp would be good. 
-    //then I could write a for loop. 
-    //note - add and cmp need ALU and status flag regs. (more work)
-    //maybe just jmp first 
 
 endmodule

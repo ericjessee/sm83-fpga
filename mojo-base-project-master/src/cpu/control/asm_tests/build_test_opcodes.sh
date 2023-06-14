@@ -1,5 +1,9 @@
 #!/bin/bash
+#rgbds assembler (https://rgbds.gbdev.io/)
 echo "assembling..."
-rgbasm -L -o hello-world.o hello-world.gameboy.asm
+rgbasm -L -o test_opcodes.o test_opcodes.gameboy.asm
 echo "linking..."
-rgblink -o hello-world.gb hello-world.o -x
+rgblink -o test_opcodes.gb test_opcodes.o -x
+echo "converting to .coe..."
+rm -f rom.coe
+python3 convert_to_coe.py test_opcodes.gb
