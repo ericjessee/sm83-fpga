@@ -16,6 +16,10 @@ module control(
 
     output reg a_wr,
     output reg a_oe,
+    output reg gen_oe,
+    output reg gen_wr,
+    output reg gen_lr_sel,
+    output reg[1:0] gen_sel,
 
     output reg mem_cs,
     output reg mem_oe
@@ -37,7 +41,8 @@ module control(
         reg_d = 4'h4,
         reg_e = 4'h5,
         reg_h = 4'h6,
-        reg_l = 4'h7;
+        reg_l = 4'h7,
+        reg_gen = 4'h8;
 
     wire[15:0] reset_vec;
 
@@ -205,6 +210,10 @@ module control(
                 reg_a: begin
                     a_wr <= 1;
                     next_state <= load_byte_c;
+                end
+                reg_c: begin
+                    gen_wr <= 1;
+                    gen_sel = 
                 end
             default: begin
                     next_state <= load_byte_c;

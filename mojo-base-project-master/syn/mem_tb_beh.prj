@@ -1,3 +1,0 @@
-verilog work "../ipcore_dir/mem.v"
-verilog work "../src/tb/mem_tb.v"
-verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

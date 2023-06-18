@@ -1,3 +1,0 @@
-verilog isim_temp "../ipcore_dir/mem.v"
-verilog isim_temp "../src/tb/mem_tb.v"
-verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
