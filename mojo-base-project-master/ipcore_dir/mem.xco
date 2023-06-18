@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sun Jun 11 18:02:36 2023
+# Date: Sun Jun 18 23:23:06 2023
 #
 ##############################################################
 #
@@ -40,13 +40,13 @@ SELECT Block_Memory_Generator xilinx.com:ip:blk_mem_gen:7.3
 # END Select
 # BEGIN Parameters
 CSET additional_inputs_for_power_estimation=false
-CSET algorithm=Fixed_Primitives
+CSET algorithm=Minimum_Area
 CSET assume_synchronous_clk=false
 CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=/home/eric/fpga/mojo-base-project-master/rom/mem.coe
+CSET coe_file=/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/cpu/control/asm_tests/rom.coe
 CSET collision_warnings=ALL
 CSET component_name=mem
 CSET disable_collision_warnings=true
@@ -73,7 +73,7 @@ CSET port_a_write_rate=0
 CSET port_b_clock=0
 CSET port_b_enable_rate=0
 CSET port_b_write_rate=0
-CSET primitive=16kx1
+CSET primitive=8kx2
 CSET read_width_a=8
 CSET read_width_b=8
 CSET register_porta_input_of_softecc=false
@@ -105,4 +105,4 @@ CSET write_width_b=8
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: ded2d8d9
+# CRC: e4db1fc6

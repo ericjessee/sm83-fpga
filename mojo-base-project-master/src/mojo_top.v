@@ -34,19 +34,6 @@ wire[31:0] data;
 
 assign led[6:0] = 6'b0;
 
-timer timer_inst(
-    clk,
-	 rst,
-    led[7]
-);
-
-mem rom (
-	.clka(clk),
-	.ena(en),
-	.addra(addr),
-	.douta(data)
-);
-
 //assign led[7] = rst;
 
 endmodule

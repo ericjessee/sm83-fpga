@@ -1,0 +1,16 @@
+memory_initialization_radix=16;
+memory_initialization_vector=
+0e,
+01,
+1e,
+02,
+2e,
+03,
+3e,
+04,
+06,
+05,
+16,
+06,
+26,
+07;

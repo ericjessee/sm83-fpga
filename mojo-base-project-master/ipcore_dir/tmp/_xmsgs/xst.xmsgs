@@ -200,28 +200,28 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%d" index="1">31</arg>: (<arg fmt="%d" index="2">7</arg>,<arg fmt="%d" index="3">49152</arg>) 	: <arg fmt="%d" index="4">1</arg>x<arg fmt="%d" index="5">16384</arg> 	u:<arg fmt="%d" index="6">1</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_input_block.vhd" Line 691: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_input_block.vhd" Line 691: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_input_block.vhd" Line 707: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_input_block.vhd" Line 707: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 978: Range is empty (null range)
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 978: Range is empty (null range)
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 978: Assignment ignored
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 978: Assignment ignored
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 979: Range is empty (null range)
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 979: Range is empty (null range)
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 979: Assignment ignored
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_width.vhd" Line 979: Assignment ignored
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -233,43 +233,28 @@
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 942: Range is empty (null range)
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 942: Range is empty (null range)
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 942: Assignment ignored
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 942: Assignment ignored
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 493: Net &lt;<arg fmt="%s" index="1">pad_addr_b14[13]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 493: Net &lt;<arg fmt="%s" index="1">pad_addr_b14[13]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 502: Net &lt;<arg fmt="%s" index="1">pad_din_b32[31]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 502: Net &lt;<arg fmt="%s" index="1">pad_din_b32[31]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 505: Net &lt;<arg fmt="%s" index="1">pad_dinp_b4[3]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 505: Net &lt;<arg fmt="%s" index="1">pad_dinp_b4[3]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 531: Net &lt;<arg fmt="%s" index="1">doutb_i[0]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
-</msg>
-
-<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) has words wider than <arg fmt="%0d" index="2">8</arg> bits, right-aligning.
-</msg>
-
-<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_prim_wrapper_s6_init.vhd" Line 531: Net &lt;<arg fmt="%s" index="1">doutb_i[0]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -284,7 +269,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -299,7 +284,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -314,7 +299,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -329,7 +314,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -344,7 +329,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -359,7 +344,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -374,7 +359,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -389,7 +374,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -404,7 +389,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -419,7 +404,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -434,7 +419,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -449,7 +434,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -464,7 +449,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -479,7 +464,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -494,7 +479,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -509,7 +494,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -524,7 +509,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -539,7 +524,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -554,7 +539,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -569,7 +554,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -584,7 +569,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -599,7 +584,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -614,7 +599,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -629,7 +614,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -644,7 +629,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -659,7 +644,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -674,7 +659,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -689,7 +674,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -704,7 +689,7 @@
 <msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
 <msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
@@ -716,82 +701,97 @@
 <msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 1546: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="info" file="ip" num="0" delta="new" ><arg fmt="%s" index="1">$Id: get_init_bmg_v7_3.c,v 1.3 2011/07/25 06:20:41 Exp $</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 1559: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="info" file="ip" num="0" delta="new" >Reading MIF file at <arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/mem.mif</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 459: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) depth is smaller than memory depth.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 470: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="warning" file="ip" num="0" delta="new" >Memory initialization file (<arg fmt="%s" index="1">mem.mif</arg>) has words wider than <arg fmt="%0d" index="2">8</arg> bits, right-aligning.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 472: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="info" file="ip" num="0" delta="new" >Default data (<arg fmt="%s" index="1">0</arg> hex) will persist where not overwritten by MIF file.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 872: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 1546: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 447: Net &lt;<arg fmt="%s" index="1">sbiterr_array[63]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 1559: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 448: Net &lt;<arg fmt="%s" index="1">dbiterr_array[63]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 459: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 470: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 472: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_mux.vhd" Line 872: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 447: Net &lt;<arg fmt="%s" index="1">sbiterr_array[63]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd" Line 448: Net &lt;<arg fmt="%s" index="1">dbiterr_array[63]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">doutb</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_awready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdata</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_wready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rresp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rdaddrecc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_arready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_awready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_wready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_bvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_arready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_rvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_sbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/mem.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">s_axi_dbiterr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">S_AXI_AWID</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -953,214 +953,214 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">INJECTDBITERR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[0].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[0].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[0].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[0].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[1].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[1].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[1].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[1].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[2].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[2].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[2].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[2].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[3].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[3].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[3].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[3].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[4].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[4].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[4].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[4].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[5].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[5].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[5].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[5].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[6].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[6].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[6].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[6].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[7].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[7].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[7].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[7].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[8].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[8].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[8].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[8].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[9].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[9].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[9].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[9].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[10].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[10].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[10].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[10].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[11].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[11].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[11].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[11].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[12].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[12].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[12].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[12].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[13].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[13].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[13].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[13].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[14].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[14].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[14].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[14].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[15].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[15].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[15].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[15].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[16].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[16].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[16].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[16].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[17].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[17].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[17].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[17].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[18].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[18].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[18].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[18].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[19].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[19].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[19].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[19].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[20].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[20].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[20].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[20].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[21].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[21].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[21].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[21].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[22].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[22].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[22].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[22].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[23].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[23].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[23].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[23].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[24].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[24].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[24].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[24].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[25].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[25].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[25].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[25].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[26].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[26].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[26].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[26].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[27].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[27].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[27].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[27].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[28].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[28].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[28].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[28].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[29].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[29].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[29].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[29].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[30].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[30].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[30].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[30].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[31].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[31].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[31].ram.r</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1342</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramloop[31].ram.r</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">RDADDRECC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">RDADDRECC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1606</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_a.A</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">RDADDRECC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">RDADDRECC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">SBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/eric/fpga/sm83-fpga/mojo-base-project-master/ipcore_dir/tmp/_cg/_dbg/blk_mem_gen_v7_3/blk_mem_gen_generic_cstr.vhd</arg>&quot; line <arg fmt="%s" index="2">1750</arg>: Output port &lt;<arg fmt="%s" index="3">DBITERR</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">has_mux_b.B</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">RDADDRECC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -2552,7 +2552,7 @@
 <msg type="warning" file="Xst" num="2398" delta="old" >RAMs &lt;<arg fmt="%s" index="1">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt; are equivalent
 </msg>
 
-<msg type="warning" file="Xst" num="2398" delta="new" >RAMs &lt;<arg fmt="%s" index="1">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt; are equivalent
+<msg type="warning" file="Xst" num="2398" delta="new" >RAMs &lt;<arg fmt="%s" index="1">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt;, &lt;<arg fmt="%s" index="2">U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram</arg>&gt; are equivalent
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

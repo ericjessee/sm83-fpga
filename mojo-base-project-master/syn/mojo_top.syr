@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: mojo_top.prj
@@ -111,11 +111,7 @@ Cores Search Directories           : {"../ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/eric/fpga/mojo-base-project-master/src/timer.v" into library work
-Parsing module <timer>.
-Analyzing Verilog file "/home/eric/fpga/mojo-base-project-master/ipcore_dir/mem.v" into library work
-Parsing module <mem>.
-Analyzing Verilog file "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v" into library work
+Analyzing Verilog file "/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo_top.v" into library work
 Parsing module <mojo_top>.
 
 =========================================================================
@@ -124,30 +120,20 @@ Parsing module <mojo_top>.
 
 Elaborating module <mojo_top>.
 
-Elaborating module <timer>.
-WARNING:HDLCompiler:413 - "/home/eric/fpga/mojo-base-project-master/src/timer.v" Line 22: Result of 25-bit expression is truncated to fit in 24-bit target.
-
-Elaborating module <mem>.
-WARNING:HDLCompiler:1499 - "/home/eric/fpga/mojo-base-project-master/ipcore_dir/mem.v" Line 39: Empty module <mem> remains a black box.
-WARNING:HDLCompiler:1127 - "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v" Line 47: Assignment to data ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v" Line 30: Net <en> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v" Line 32: Net <addr[31]> does not have a driver.
-
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <mojo_top>.
-    Related source file is "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v".
+    Related source file is "/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo_top.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/eric/fpga/mojo-base-project-master/src/mojo_top.v" line 43: Output port <douta> of the instance <rom> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit tristate buffer for signal <spi_miso> created at line 26
     Found 1-bit tristate buffer for signal <avr_rx> created at line 27
     Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 28
@@ -158,25 +144,10 @@ WARNING:Xst:653 - Signal <en> is used but never assigned. This sourceless signal
 	inferred   6 Tristate(s).
 Unit <mojo_top> synthesized.
 
-Synthesizing Unit <timer>.
-    Related source file is "/home/eric/fpga/mojo-base-project-master/src/timer.v".
-    Found 24-bit register for signal <counter>.
-    Found 1-bit register for signal <out>.
-    Found 24-bit adder for signal <counter[23]_GND_8_o_add_2_OUT> created at line 22.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  25 D-type flip-flop(s).
-Unit <timer> synthesized.
-
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 24-bit adder                                          : 1
-# Registers                                            : 2
- 1-bit register                                        : 1
- 24-bit register                                       : 1
 # Tristates                                            : 6
  1-bit tristate buffer                                 : 6
 
@@ -186,22 +157,11 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Reading core <../ipcore_dir/mem.ngc>.
-Loading core <mem> for timing and area information for instance <rom>.
-
-Synthesizing (advanced) Unit <timer>.
-The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
-Unit <timer> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Macro Statistics
-# Counters                                             : 1
- 24-bit up counter                                     : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -219,10 +179,7 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Macro Statistics
-# Registers                                            : 25
- Flip-Flops                                            : 25
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -244,23 +201,11 @@ Top Level Output File Name         : mojo_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 107
-#      GND                         : 2
-#      INV                         : 1
-#      LUT1                        : 23
-#      LUT6                        : 33
-#      MUXCY                       : 23
+# BELS                             : 2
+#      GND                         : 1
 #      VCC                         : 1
-#      XORCY                       : 24
-# FlipFlops/Latches                : 25
-#      FD                          : 25
-# RAMS                             : 32
-#      RAMB8BWER                   : 32
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 15
-#      IBUF                        : 1
-#      OBUF                        : 8
+# IO Buffers                       : 13
+#      OBUF                        : 7
 #      OBUFT                       : 6
 
 Device utilization summary:
@@ -270,25 +215,19 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              25  out of  11440     0%  
- Number of Slice LUTs:                   57  out of   5720     0%  
-    Number used as Logic:                57  out of   5720     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     57
-   Number with an unused Flip Flop:      32  out of     57    56%  
-   Number with an unused LUT:             0  out of     57     0%  
-   Number of fully used LUT-FF pairs:    25  out of     57    43%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                          22
- Number of bonded IOBs:                  16  out of    102    15%  
+ Number of bonded IOBs:                  13  out of    102    12%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               16  out of     32    50%  
-    Number using Block RAM only:         16
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -308,13 +247,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                                                                                                                         | Load  |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
-rom/N1                             | NONE(rom/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 32    |
-clk                                | BUFGP                                                                                                                                         | 57    |
------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -324,9 +257,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 3.827ns (Maximum Frequency: 261.301MHz)
-   Minimum input arrival time before clock: 3.514ns
-   Maximum output required time after clock: 4.162ns
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -334,92 +267,22 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.827ns (frequency: 261.301MHz)
-  Total number of paths / destination ports: 901 / 25
--------------------------------------------------------------------------
-Delay:               3.827ns (Levels of Logic = 2)
-  Source:            timer_inst/counter_13 (FF)
-  Destination:       timer_inst/counter_20 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: timer_inst/counter_13 to timer_inst/counter_20
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               3   0.525   1.221  timer_inst/counter_13 (timer_inst/counter_13)
-     LUT6:I0->O           12   0.254   1.499  timer_inst/counter[23]_PWR_2_o_equal_2_o<23>4_1 (timer_inst/counter[23]_PWR_2_o_equal_2_o<23>4)
-     LUT6:I1->O            1   0.254   0.000  timer_inst/counter_20_rstpot (timer_inst/counter_20_rstpot)
-     FD:D                      0.074          timer_inst/counter_20
-    ----------------------------------------
-    Total                      3.827ns (1.107ns logic, 2.720ns route)
-                                       (28.9% logic, 71.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 25 / 25
--------------------------------------------------------------------------
-Offset:              3.514ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       timer_inst/out (FF)
-  Destination Clock: clk rising
-
-  Data Path: rst_n to timer_inst/out
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            25   1.328   1.858  rst_n_IBUF (rst_n_IBUF)
-     LUT6:I0->O            1   0.254   0.000  timer_inst/out_rstpot1 (timer_inst/out_rstpot1)
-     FD:D                      0.074          timer_inst/out
-    ----------------------------------------
-    Total                      3.514ns (1.656ns logic, 1.858ns route)
-                                       (47.1% logic, 52.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            timer_inst/out (FF)
-  Destination:       led<7> (PAD)
-  Source Clock:      clk rising
-
-  Data Path: timer_inst/out to led<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  timer_inst/out (timer_inst/out)
-     OBUF:I->O                 2.912          led_7_OBUF (led<7>)
-    ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    3.827|         |         |         |
----------------+---------+---------+---------+---------+
-
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.07 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.26 secs
  
 --> 
 
 
-Total memory usage is 371704 kilobytes
+Total memory usage is 361588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

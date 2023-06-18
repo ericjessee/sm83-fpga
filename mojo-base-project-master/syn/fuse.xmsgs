@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="835" delta="unknown" >"/home/eric/fpga/mojo-base-project-master/syn/../src/cpu/regfile/regfile_top.v" Line 131: Too many parameters for module instance <arg fmt="%s" index="1">Decoder_0</arg>
+<msg type="warning" file="HDLCompiler" num="835" delta="unknown" >"/home/eric/fpga/sm83-fpga/mojo-base-project-master/syn/../src/cpu/regfile/regfile_top.v" Line 131: Too many parameters for module instance <arg fmt="%s" index="1">Decoder_0</arg>
 </msg>
 
 </messages>

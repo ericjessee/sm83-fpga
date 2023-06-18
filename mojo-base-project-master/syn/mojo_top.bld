@@ -3,18 +3,42 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc
-/home/eric/fpga/mojo-base-project-master/src/mojo.ucf -p xc6slx9-tqg144-2
-mojo_top.ngc mojo_top.ngd
+/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf -p
+xc6slx9-tqg144-2 mojo_top.ngc mojo_top.ngd
 
-Reading NGO file "/home/eric/fpga/mojo-base-project-master/syn/mojo_top.ngc" ...
-Loading design module "../ipcore_dir/mem.ngc"...
+Reading NGO file
+"/home/eric/fpga/sm83-fpga/mojo-base-project-master/syn/mojo_top.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file
-"/home/eric/fpga/mojo-base-project-master/src/mojo.ucf" ...
+"/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <NET "clk" TNM_NET = clk;>
+   [/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf(2)]: No
+   appropriate instances for the TNM constraint are driven by "clk".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk = PERIOD "clk" 50 MHz
+   HIGH 50%;>
+   [/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf(3)]: Unable
+   to find an active 'TNM' or 'TimeGrp' constraint named 'clk'.
+
+WARNING:ConstraintSystem:191 - The TNM 'clk', does not directly or indirectly
+   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
+   referencing Period constraint 'TS_clk'. If clock manager blocks are directly
+   or indirectly driven, a new TNM constraint will not be derived even though
+   the referencing constraint is a PERIOD constraint unless an output of the
+   clock manager drives flip-flops, latches or RAMs. This TNM is used in the
+   following user PERIOD specification:
+   <TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50%;>
+   [/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf(3)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50%;>
+   [/home/eric/fpga/sm83-fpga/mojo-base-project-master/src/mojo.ucf(3)]
+
 Done...
 
 Checking expanded design ...
@@ -28,12 +52,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   4
 
-Total memory usage is 390496 kilobytes
+Total memory usage is 388244 kilobytes
 
 Writing NGD file "mojo_top.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "mojo_top.bld"...

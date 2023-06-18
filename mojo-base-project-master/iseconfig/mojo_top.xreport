@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-06-11T09:36:52</DateModified>
+  <DateModified>2023-06-18T19:33:29</DateModified>
   <ModuleName>mojo_top</ModuleName>
-  <SummaryTimeStamp>2023-06-05T20:28:59</SummaryTimeStamp>
-  <SavedFilePath>/home/eric/fpga/mojo-base-project-master/iseconfig/mojo_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/eric/fpga/mojo-base-project-master/syn/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2023-06-18T19:08:31</SummaryTimeStamp>
+  <SavedFilePath>/home/eric/fpga/sm83-fpga/mojo-base-project-master/iseconfig/mojo_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/eric/fpga/sm83-fpga/mojo-base-project-master/syn/</ImplementationReportsDirectory>
   <DateInitialized>2012-11-08T12:38:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

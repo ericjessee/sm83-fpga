@@ -53,7 +53,7 @@ output [7 : 0] douta;
   BLK_MEM_GEN_V7_3 #(
     .C_ADDRA_WIDTH(16),
     .C_ADDRB_WIDTH(16),
-    .C_ALGORITHM(0),
+    .C_ALGORITHM(1),
     .C_AXI_ID_WIDTH(4),
     .C_AXI_SLAVE_TYPE(0),
     .C_AXI_TYPE(1),
@@ -86,7 +86,7 @@ output [7 : 0] douta;
     .C_LOAD_INIT_FILE(1),
     .C_MEM_TYPE(3),
     .C_MUX_PIPELINE_STAGES(0),
-    .C_PRIM_TYPE(0),
+    .C_PRIM_TYPE(1),
     .C_READ_DEPTH_A(65535),
     .C_READ_DEPTH_B(65535),
     .C_READ_WIDTH_A(8),

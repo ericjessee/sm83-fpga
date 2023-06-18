@@ -3,14 +3,14 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/eric/fpga/mojo-base-project-master/syn/test_control_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/eric/fpga/sm83-fpga/mojo-base-project-master/syn/test_control_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="test_control_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="40" />
+   <WVObjectSize size="37" />
    <wvobject fp_name="/test_control_tb/data_bus" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">data_bus[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_bus[7:0]</obj_property>
@@ -55,18 +55,6 @@
       <obj_property name="ElementShortName">rom_out[7:0]</obj_property>
       <obj_property name="ObjectShortName">rom_out[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test_control_tb/pc_inc_en" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_inc_en</obj_property>
-      <obj_property name="ObjectShortName">pc_inc_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/pc_inc_tap_en" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_inc_tap_en</obj_property>
-      <obj_property name="ObjectShortName">pc_inc_tap_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/pc_inc_tap" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_inc_tap[15:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_inc_tap[15:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/test_control_tb/const0" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">const0</obj_property>
       <obj_property name="ObjectShortName">const0</obj_property>
@@ -78,6 +66,18 @@
    <wvobject fp_name="/test_control_tb/const0_3bit" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">const0_3bit[2:0]</obj_property>
       <obj_property name="ObjectShortName">const0_3bit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_en</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_tap_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_tap_en</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_tap_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/pc_inc_tap" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc_tap[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_inc_tap[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test_control_tb/data_ready" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">data_ready</obj_property>
@@ -106,6 +106,10 @@
    <wvobject fp_name="/test_control_tb/ctl/current_state" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">current_state[15:0]</obj_property>
       <obj_property name="ObjectShortName">current_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_control_tb/ctl/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test_control_tb/ctl/reset" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">reset[15:0]</obj_property>
@@ -154,23 +158,5 @@
    <wvobject fp_name="/test_control_tb/ctl/load_byte_c" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">load_byte_c[15:0]</obj_property>
       <obj_property name="ObjectShortName">load_byte_c[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/ctl/lda_d8" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">lda_d8[7:0]</obj_property>
-      <obj_property name="ObjectShortName">lda_d8[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/rom/douta" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">douta[7:0]</obj_property>
-      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/rom/addra" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">addra[15:0]</obj_property>
-      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test_control_tb/regfile/a_reg/DflipFlop_0/q" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">q[7:0]</obj_property>
-      <obj_property name="ObjectShortName">q[7:0]</obj_property>
-      <obj_property name="label">a reg conts</obj_property>
    </wvobject>
 </wave_config>

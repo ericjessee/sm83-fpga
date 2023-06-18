@@ -206,6 +206,9 @@ module control(
                     a_wr <= 1;
                     next_state <= load_byte_c;
                 end
+            default: begin
+                    next_state <= load_byte_c;
+            end
             endcase
         end
         load_byte_c: begin
