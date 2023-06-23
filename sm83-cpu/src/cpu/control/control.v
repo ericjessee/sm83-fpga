@@ -19,7 +19,7 @@ module control(
     output reg gen_oe,
     output reg gen_wr,
     output reg gen_lr_sel,
-    output reg[1:0] gen_sel,
+    output reg[2:0] gen_sel,
 
     output reg mem_cs,
     output reg mem_oe
@@ -31,6 +31,12 @@ module control(
     reg[15:0] current_state, next_state, return_state;
     reg assert_addr;
     reg[3:0] ld_reg;
+
+    localparam[1:0]
+        //gen_sel enums
+        regs_bc = 2'h0,
+        regs_de = 2'h1,
+        regs_hl = 2'h2;
 
     localparam[3:0]
         //register enums
@@ -94,6 +100,10 @@ module control(
             mem_oe <= 0;
             a_oe <= 0;
             a_wr <= 0;
+            gen_oe <= 0;
+            gen_wr <= 0;
+            gen_lr_sel <= 0;
+            gen_sel <= 0;
             pc_oe <= 0;
             pc_wr <= 0;
             pc_ldh <= 0;
@@ -159,37 +169,31 @@ module control(
                 lde_d8: begin
                     ld_reg <= reg_e;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 ldl_d8: begin
                     ld_reg <= reg_l;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 lda_d8: begin
                     ld_reg <= reg_a;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 ldb_d8: begin
                     ld_reg <= reg_b;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 ldd_d8: begin
                     ld_reg <= reg_d;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 ldh_d8: begin
                     ld_reg <= reg_h;
                     return_state <= load_byte_a;
-                    //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 default: begin
@@ -211,13 +215,56 @@ module control(
                     a_wr <= 1;
                     next_state <= load_byte_c;
                 end
+                reg_b: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_bc;
+                    gen_lr_sel <= 0;
+                    next_state <= load_byte_c;
+                end                   
+                reg_c: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_bc;
+                    gen_lr_sel <= 1;
+                    next_state <= load_byte_c;
+                end
+                reg_d: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_de;
+                    gen_lr_sel <= 0;
+                    next_state <= load_byte_c;
+                end   
+                reg_e: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_de;
+                    gen_lr_sel <= 1;
+                    next_state <= load_byte_c;
+                end   
+                reg_h: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_hl;
+                    gen_lr_sel <= 0;
+                    next_state <= load_byte_c;
+                end   
+                reg_l: begin
+                    gen_wr <= 1;
+                    gen_sel <= regs_hl;
+                    gen_lr_sel <= 1;
+                    next_state <= load_byte_c;
+                end                   
             default: begin
                     next_state <= load_byte_c;
             end
             endcase
         end
         load_byte_c: begin
-            a_wr <= 0;
+            case(ld_reg)
+                reg_a: begin
+                    a_wr <= 0;
+                end
+                reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: begin
+                    gen_wr <= 0;
+                end
+            endcase
             return_state <= fetch_a;
             next_state <= inc_pc_a;
         end

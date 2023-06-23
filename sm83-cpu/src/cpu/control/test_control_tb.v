@@ -16,7 +16,8 @@ module test_control_tb();
 
     //inter-module connections
     wire pc_oe_conn, pc_wr_conn, pc_ldh_conn, pc_ld16_conn;
-    wire a_wr_conn, a_oe_conn; 
+    wire a_wr_conn, a_oe_conn, gen_oe_conn, gen_wr_conn, gen_lr_sel_conn;
+    wire[2:0] gen_sel_conn;
     wire rom_oe;
     wire rom_cs;
     wire[7:0] rom_out;
@@ -36,7 +37,7 @@ module test_control_tb();
     assign const1 = 1;
     assign const0_3bit = 3'd0;
 
-    mem rom(
+    bootrom rom(
         .clka(clk),
         .ena(const1),
         .addra(addr_bus),
@@ -59,6 +60,10 @@ module test_control_tb();
         .pc_inc_tap_en(pc_inc_tap_en),
         .a_wr(a_wr_conn),
         .a_oe(a_oe_conn),
+        .gen_oe(gen_oe_conn),
+        .gen_wr(gen_wr_conn),
+        .gen_lr_sel(gen_lr_sel_conn),
+        .gen_sel(gen_sel_conn),
         .mem_cs(rom_cs),
         .mem_oe(rom_oe)
     );
@@ -70,7 +75,7 @@ module test_control_tb();
         .pc_wr(pc_wr_conn), .pc_oe(pc_oe_conn), 
         .sp_wr(const0), .sp_oe(const0), 
         .a_wr(a_wr_conn), .a_oe(a_oe_conn), .f_oe(const0), .f_wr(const0), 
-        .gen_16b_mode(const0), .gen_LR_sel(const0), .gen_reg_sel(const0_3bit),.gen_wr(const0), .gen_oe(const0),
+        .gen_16b_mode(const0), .gen_LR_sel(gen_lr_sel_conn), .gen_reg_sel(gen_sel_conn),.gen_wr(gen_wr_conn), .gen_oe(gen_oe_conn),
         .pc_ldh(const0), .pc_ld16(const1), .sp_ldh(const0), .sp_ld16(const0), .inc_pc(pc_inc_tap_en) 
     );
 
