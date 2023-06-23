@@ -211,10 +211,6 @@ module control(
                     a_wr <= 1;
                     next_state <= load_byte_c;
                 end
-                reg_c: begin
-                    gen_wr <= 1;
-                    gen_sel = 
-                end
             default: begin
                     next_state <= load_byte_c;
             end
