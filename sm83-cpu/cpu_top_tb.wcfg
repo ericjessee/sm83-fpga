@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/eric/fpga/sm83-fpga/sm83-cpu/cpu_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cpu_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/cpu_top_tb/data_bus_tb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_bus_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/addr_bus_tb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus_tb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus_tb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/mem_oe_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_oe_conn</obj_property>
+      <obj_property name="ObjectShortName">mem_oe_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/mem_cs_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_cs_conn</obj_property>
+      <obj_property name="ObjectShortName">mem_cs_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/mem_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/const1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">const1</obj_property>
+      <obj_property name="ObjectShortName">const1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/a_reg/DflipFlop_0_Q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
+      <obj_property name="label">a reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\c-l /register_8bit_0/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">c reg </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\c-l /register_8bit_1/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">e reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\c-l /register_8bit_2/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">l reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\b-h /register_8bit_0/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">b reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\b-h /register_8bit_1/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">d reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\b-h /register_8bit_2/DflipFlop_0/q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="label">h reg</obj_property>
+   </wvobject>
+</wave_config>
