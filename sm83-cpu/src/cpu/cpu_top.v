@@ -5,24 +5,9 @@ module cpu_top(
     input mem_oe,
     input mem_cs,
     
-    inout[7:0] data_bus,
-    inout[15:0] addr_bus
+    inout[7:0] data_bus_ext,
+    inout[15:0] addr_bus_ext
 );
-
-    //wire[7:0] data_bus;
-    //wire[15:0] addr_bus;
-
-    // assign data_bus = data_bus_ext;
-    // assign addr_bus_ext = addr_bus;
-
-    //bus control signals
-    reg data_ready;
-    reg addr_ready;
-
-    //inter-module connections
-    wire pc_oe_conn, pc_wr_conn, pc_ldh_conn, pc_ld16_conn;
-    wire a_wr_conn, a_oe_conn, gen_oe_conn, gen_wr_conn, gen_lr_sel_conn;
-    wire[2:0] gen_sel_conn;
 
     //arbitrary constants
     wire const0;
@@ -31,6 +16,24 @@ module cpu_top(
     assign const0 = 0;
     assign const1 = 1;
     assign const0_3bit = 3'd0;
+
+    wire[7:0] data_bus;
+    wire[15:0] addr_bus;
+
+    assign data_bus = data_bus_ext;
+
+    addr_buffer addrbuf(
+        .addr_bus_int(addr_bus),
+        .addr_bus_ext(addr_bus_ext),
+        .latch(const0),
+        .oe(const0),
+        .bypass(const1)
+    );
+
+    //inter-module connections
+    wire pc_oe_conn, pc_wr_conn, pc_ldh_conn, pc_ld16_conn;
+    wire a_wr_conn, a_oe_conn, gen_oe_conn, gen_wr_conn, gen_lr_sel_conn;
+    wire[2:0] gen_sel_conn;
 	 
     wire pc_inc_en, pc_inc_tap_en;
     wire[15:0] pc_inc_tap;
