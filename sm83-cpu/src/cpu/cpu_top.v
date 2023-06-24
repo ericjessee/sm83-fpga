@@ -1,33 +1,28 @@
-module test_control_tb();
+module cpu_top(
+    input clk,
+    input rst,
 
-    wire[7:0] data_bus;
-    wire[15:0] addr_bus;
+    input mem_oe,
+    input mem_cs,
+    
+    inout[7:0] data_bus,
+    inout[15:0] addr_bus
+);
+
+    //wire[7:0] data_bus;
+    //wire[15:0] addr_bus;
+
+    // assign data_bus = data_bus_ext;
+    // assign addr_bus_ext = addr_bus;
 
     //bus control signals
     reg data_ready;
     reg addr_ready;
 
-    //arbitrary data to place on the buses
-    reg[7:0] data_to_write;
-    reg[15:0] addr_to_write;
-
-    reg clk;
-    reg rst;
-
     //inter-module connections
     wire pc_oe_conn, pc_wr_conn, pc_ldh_conn, pc_ld16_conn;
     wire a_wr_conn, a_oe_conn, gen_oe_conn, gen_wr_conn, gen_lr_sel_conn;
     wire[2:0] gen_sel_conn;
-    wire rom_oe;
-    wire rom_cs;
-    wire[7:0] rom_out;
-
-    //need to make sure outputs are hiz when not driving the bus
-    assign data_bus = data_ready ? data_to_write : 'hz;
-    assign addr_bus = addr_ready ? addr_to_write : 'hz;
-
-    //rom output is not tri state
-    assign data_bus = rom_oe ? rom_out : 'hz;
 
     //arbitrary constants
     wire const0;
@@ -36,13 +31,6 @@ module test_control_tb();
     assign const0 = 0;
     assign const1 = 1;
     assign const0_3bit = 3'd0;
-
-    bootrom rom(
-        .clka(clk),
-        .ena(const1),
-        .addra(addr_bus),
-        .douta(rom_out)
-    ); 
 	 
     wire pc_inc_en, pc_inc_tap_en;
     wire[15:0] pc_inc_tap;
@@ -64,8 +52,8 @@ module test_control_tb();
         .gen_wr(gen_wr_conn),
         .gen_lr_sel(gen_lr_sel_conn),
         .gen_sel(gen_sel_conn),
-        .mem_cs(rom_cs),
-        .mem_oe(rom_oe)
+        .mem_cs(mem_cs),
+        .mem_oe(mem_oe)
     );
 
 	regfile_top regfile(
@@ -85,21 +73,5 @@ module test_control_tb();
         .din(pc_inc_tap),
         .dout(addr_bus)
     );
-    
-    initial begin
-        clk=0;
-        rst=1;
-        addr_ready=0;
-        data_ready=0;
-        #10
-        clk=1;
-        #10
-        clk=0;
-        rst=0;
-        forever begin
-            #10
-            clk=~clk;
-        end       
-    end
 
 endmodule
