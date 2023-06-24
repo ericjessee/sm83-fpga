@@ -128,7 +128,7 @@ module gen_regs(dout, clk, reg_sel, din, rst, reg_wr, reg_oe, cs);
   register_8bit register_8bit_0(register_8bit_5_out, ctl_sel_out[0], rst, clk, TriState_0_out, ctl_sel_out[1]);
   assign TriState_0_out = (cs!=0) ? din : 8'b?;
   assign Splitter_6_cmb = {reg_oe,reg_wr};
-  Decoder8 #(3) Decoder_0(Decoder_0_out_0, Decoder_0_out_1, Decoder_0_out_2, Decoder_0_out_3, Decoder_0_out_4, Decoder_0_out_5, , , reg_sel);
+  Decoder8 Decoder_0(Decoder_0_out_0, Decoder_0_out_1, Decoder_0_out_2, Decoder_0_out_3, Decoder_0_out_4, Decoder_0_out_5, , , reg_sel);
   assign const_0 = 2'b00;
 endmodule
 

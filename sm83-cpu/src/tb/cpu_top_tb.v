@@ -29,8 +29,8 @@ module cpu_top_tb();
         .rst(rst),
         .mem_oe(mem_oe_conn),
         .mem_cs(mem_cs_conn),
-        .data_bus(data_bus_tb),
-        .addr_bus(addr_bus_tb)
+        .data_bus_ext(data_bus_tb),
+        .addr_bus_ext(addr_bus_tb)
     );
 
     initial begin

@@ -93,7 +93,7 @@ module control(
     end
 
     always @(current_state) begin
-    next_state = current_state; //when no case is satisfied, remain on current state
+    next_state <= current_state; //when no case is satisfied, remain on current state
     case(current_state)
         reset: begin
             mem_cs <= 1;
