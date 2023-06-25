@@ -12,16 +12,16 @@
   Element Usage Report
     Input - 52 times
     TriState - 6 times
-    Output - 8 times
+    Output - 10 times
     DflipFlop - 1 times
-    Multiplexer - 13 times
-    Splitter - 15 times
+    Multiplexer - 14 times
+    Splitter - 18 times
     SubCircuit - 15 times
     Decoder - 1 times
     ConstantVal - 3 times
-    Demultiplexer - 2 times
+    Demultiplexer - 3 times
     OrGate - 2 times
-    NotGate - 3 times
+    NotGate - 4 times
 */
 
 /*
@@ -128,7 +128,7 @@ module gen_regs(dout, clk, reg_sel, din, rst, reg_wr, reg_oe, cs);
   register_8bit register_8bit_0(register_8bit_5_out, ctl_sel_out[0], rst, clk, TriState_0_out, ctl_sel_out[1]);
   assign TriState_0_out = (cs!=0) ? din : 8'b?;
   assign Splitter_6_cmb = {reg_oe,reg_wr};
-  Decoder8 Decoder_0(Decoder_0_out_0, Decoder_0_out_1, Decoder_0_out_2, Decoder_0_out_3, Decoder_0_out_4, Decoder_0_out_5, , , reg_sel);
+  Decoder8 #(3) Decoder_0(Decoder_0_out_0, Decoder_0_out_1, Decoder_0_out_2, Decoder_0_out_3, Decoder_0_out_4, Decoder_0_out_5, , , reg_sel);
   assign const_0 = 2'b00;
 endmodule
 
@@ -170,21 +170,32 @@ module gen_regs_16(out_16b, out_8b, in_16b, \16b_mode , in_8b, LR_sel, clk, rst,
 endmodule
 
 
-module register_16bit(addr_out, wr, oe, rst, clk, data_in, addr_in, loadh, load16);
+module register_16bit(addr_out, out_1, out_2, wr, oe, rst, clk, data_in, addr_in, loadh, load16);
+  output [7:0] out_1, out_2;
   output [15:0] addr_out;
   input wr, oe, rst, clk, loadh, load16;
   input [7:0] data_in;
   input [15:0] addr_in;
-  wire [7:0] register_8bit_1_out, register_8bit_0_out, Demultiplexer_0_out_0, Demultiplexer_0_out_1;
-  wire [15:0] Multiplexer_0_out, Splitter_0_cmb, Splitter_2_cmb;
-  Multiplexer2 #(16) Multiplexer_0(Multiplexer_0_out, Splitter_2_cmb, addr_in, load16);
+  wire not_0_out, Demultiplexer_1_out_0, Demultiplexer_1_out_1;
+  wire [1:0] Multiplexer_1_out, Splitter_5_cmb, Splitter_4_cmb;
+  wire [7:0] register_8bit_0_out, register_8bit_1_out, Demultiplexer_0_out_0, Demultiplexer_0_out_1;
+  wire [15:0] Splitter_0_cmb, Multiplexer_0_out, Splitter_2_cmb;
+  Multiplexer2 #(2) Multiplexer_1(Multiplexer_1_out, Splitter_5_cmb, Splitter_4_cmb, load16);
   
-  register_8bit register_8bit_1(register_8bit_1_out, wr, rst, clk, Multiplexer_0_out[15:8], oe);
+  register_8bit register_8bit_0(register_8bit_0_out, Multiplexer_1_out[1], rst, clk, Multiplexer_0_out[7:0], oe);
   assign Splitter_0_cmb = {register_8bit_1_out,register_8bit_0_out};
   assign addr_out = Splitter_0_cmb;
-  register_8bit register_8bit_0(register_8bit_0_out, wr, rst, clk, Multiplexer_0_out[7:0], oe);
+  register_8bit register_8bit_1(register_8bit_1_out, Multiplexer_1_out[0], rst, clk, Multiplexer_0_out[15:8], oe);
+  Multiplexer2 #(16) Multiplexer_0(Multiplexer_0_out, Splitter_2_cmb, addr_in, load16);
+  
+  assign out_2 = Multiplexer_0_out[15:8];
+  assign out_1 = Multiplexer_0_out[7:0];
   Demultiplexer2 #(8) Demultiplexer_0(Demultiplexer_0_out_0, Demultiplexer_0_out_1, data_in, loadh);
   assign Splitter_2_cmb = {Demultiplexer_0_out_1,Demultiplexer_0_out_0};
+  assign not_0_out = ~loadh;
+  Demultiplexer2 Demultiplexer_1(Demultiplexer_1_out_0, Demultiplexer_1_out_1, wr, not_0_out);
+  assign Splitter_5_cmb = {Demultiplexer_1_out_1,Demultiplexer_1_out_0};
+  assign Splitter_4_cmb = {wr,wr};
 endmodule
 
 
@@ -199,14 +210,14 @@ module regfile_top(data_out, addr_out, addr_inc_out, clk, rst, data_in, addr_in,
   input [7:0] data_in;
   input [15:0] addr_in;
   wire not_0_out, const_0;
-  wire [7:0] gen_regs_16_0_out_1;
-  wire [15:0] TriState_0_out, sp_out, pc_out;
+  wire [7:0] sp_out_1, sp_out_2, pc_out_1, pc_out_2, gen_regs_16_0_out_1;
+  wire [15:0] TriState_0_out, sp_out_0, pc_out_0;
   assign not_0_out = ~inc_pc;
-  assign TriState_0_out = (not_0_out!=0) ? pc_out : 16'b?;
+  assign TriState_0_out = (not_0_out!=0) ? pc_out_0 : 16'b?;
   assign addr_out = TriState_0_out;
-  register_16bit sp(sp_out, sp_wr, sp_oe, rst, clk, data_in, addr_in, sp_ldh, sp_ld16);
-  register_16bit pc(pc_out, pc_wr, pc_oe, rst, clk, data_in, addr_in, pc_ldh, pc_ld16);
-  assign addr_inc_out = pc_out;
+  register_16bit sp(sp_out_0, sp_out_1, sp_out_2, sp_wr, sp_oe, rst, clk, data_in, addr_in, sp_ldh, sp_ld16);
+  register_16bit pc(pc_out_0, pc_out_1, pc_out_2, pc_wr, pc_oe, rst, clk, data_in, addr_in, pc_ldh, pc_ld16);
+  assign addr_inc_out = pc_out_0;
   gen_regs_16 gen_regs_16_0(TriState_0_out, gen_regs_16_0_out_1, addr_in, gen_16b_mode, data_in, gen_LR_sel, clk, rst, gen_oe, const_0, gen_reg_sel, gen_wr);
   assign data_out = gen_regs_16_0_out_1;
   register_8bit f_reg(gen_regs_16_0_out_1, f_wr, rst, clk, data_in, f_oe);

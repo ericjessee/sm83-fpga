@@ -58,7 +58,10 @@ module control(
         reg_e = 4'h5,
         reg_h = 4'h6,
         reg_l = 4'h7,
-        reg_gen = 4'h8;
+        reg_gen = 4'h8,
+        reg_pch = 4'h9,
+        reg_pcl = 4'ha,
+        reg_pc = 4'hb;
 
     reg[15:0] reset_vec;
 
@@ -81,7 +84,8 @@ module control(
         load_byte_imm_c = 16'hff0b,
         load_byte_a16_a = 16'hff0c,
         load_byte_a16_b = 16'hff0d,
-        load_byte_a16_c = 16'hff0e;
+        load_byte_a16_c = 16'hff0e,
+        jp_imm16_a = 16'hff0f;
 
         //connections to decode module
         reg decode_en;
@@ -196,7 +200,7 @@ module control(
             return_state <= decode_rtn_return_state;
             next_state <= decode_rtn_next_state;
         end
-        load_byte_imm_a: begin 
+        load_byte_imm_a: begin
             //get the memory to assert the byte pointed to by pc
             decode_en <= 0;
             pc_oe <= 1;
@@ -209,6 +213,8 @@ module control(
             case(ld_reg)
                 reg_a: a_wr <= 1;
                 reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: gen_wr <= 1;
+                reg_pch: reset_vec[15:8] <= data_bus;
+                reg_pcl: reset_vec[7:0] <= data_bus;
             endcase
             case(ld_reg)
                 reg_b, reg_c: gen_sel <= regs_bc;
@@ -222,16 +228,17 @@ module control(
             next_state <= load_byte_imm_c;
         end
         load_byte_imm_c: begin
-            case(ld_reg)
-                reg_a: begin
-                    a_wr <= 0;
-                end
-                reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: begin
-                    gen_wr <= 0;
-                end
-            endcase
             return_state <= fetch_a;
             next_state <= inc_pc_a;
+            case(ld_reg)
+                reg_a: a_wr <= 0;
+                reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: gen_wr <= 0;
+                reg_pch: begin 
+                    ld_reg <= reg_pcl;
+                    return_state <= load_byte_imm_a;
+                end
+                reg_pcl: next_state <= reset;
+            endcase
         end
         load_byte_a16_a: begin
             //assert the pointer on the address bus, and latch it into the buffer
@@ -269,6 +276,10 @@ module control(
             mem_oe <= 1;
             return_state <= fetch_a;
             next_state <= inc_pc_a;
+        end
+        jp_imm16_a: begin
+        //the pc will need to be incremented twice.
+
         end
     endcase
     end

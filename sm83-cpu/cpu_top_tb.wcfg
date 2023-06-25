@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="36" />
+   <WVObjectSize size="37" />
    <wvobject fp_name="/cpu_top_tb/data_bus_tb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">data_bus_tb[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_bus_tb[7:0]</obj_property>
@@ -96,6 +96,10 @@
          <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
          <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/reset_vec" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_vec[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_vec[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/cpu_top_tb/cpu/ctl/current_state" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">current_state[15:0]</obj_property>

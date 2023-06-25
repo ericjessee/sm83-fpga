@@ -26,7 +26,8 @@ module decode(
         load_byte_imm_c = 16'hff0b,
         load_byte_a16_a = 16'hff0c,
         load_byte_a16_b = 16'hff0d,
-        load_byte_a16_c = 16'hff0e;
+        load_byte_a16_c = 16'hff0e,
+        jp_imm16_a = 16'hff0f;
 
     localparam[1:0]
         //gen_sel enums
@@ -44,10 +45,14 @@ module decode(
         reg_e = 4'h5,
         reg_h = 4'h6,
         reg_l = 4'h7,
-        reg_gen = 4'h8;
+        reg_gen = 4'h8,
+        reg_pch = 4'h9,
+        reg_pcl = 4'ha,
+        reg_pc = 4'hb;
 
     localparam[7:0]
         //opcodes--------------|
+        noop = 8'h00,
         //8 bit immediate loads
         ldc_d8 = 8'h0e,
         lde_d8 = 8'h1e,
@@ -72,12 +77,18 @@ module decode(
         rst_08h = 8'hcf,
         rst_18h = 8'hdf,
         rst_28h = 8'hef,
-        rst_38h = 8'hff;
+        rst_38h = 8'hff,
+        //jumps to 16 bit immediate pointer
+        jp_a16 = 8'hc3;
 
     always @(*) begin
         if (en) begin
             reset_vec <= 16'h0000; //reset vector is 0 unless otherwise specified.
             case(opcode)
+                noop: begin
+                    return_state <= fetch_a;
+                    next_state <= inc_pc_a;
+                end 
                 ldc_d8: begin
                     ld_reg <= reg_c;
                     return_state <= load_byte_imm_a;
@@ -180,6 +191,11 @@ module decode(
                 rst_38h: begin
                     reset_vec <= 16'h0038;
                     next_state <= reset;
+                end
+                jp_a16: begin
+                    ld_reg <= reg_pch;
+                    return_state <= load_byte_imm_a;
+                    next_state <= inc_pc_a;
                 end
                 default: begin
                     return_state <= fetch_a;

@@ -15,4 +15,5 @@ ld b,[hl]
 ld d,[hl]
 ld h,[hl]
 ld a,[hl]
+jp 0
 rst 0
