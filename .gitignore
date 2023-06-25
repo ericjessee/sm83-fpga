@@ -16,7 +16,6 @@ isim.cmd
 isim.log
 sm83-cpu.gise
 sm83-cpu.xise
-src
 test_ctl_sim.wcfg
 xilinxsim.ini
 _xmsgs
