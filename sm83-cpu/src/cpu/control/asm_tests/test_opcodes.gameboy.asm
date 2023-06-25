@@ -8,4 +8,11 @@ ld d,6
 ld h,0
 ld l,0
 ld c,[hl]
-rst, 0
+ld e,[hl]
+ld l,[hl]
+ld l,0
+ld b,[hl]
+ld d,[hl]
+ld h,[hl]
+ld a,[hl]
+rst 0

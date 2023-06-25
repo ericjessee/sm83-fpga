@@ -56,10 +56,9 @@ module control(
         reg_l = 4'h7,
         reg_gen = 4'h8;
 
-    wire[15:0] reset_vec;
+    reg[15:0] reset_vec;
 
     assign addr_bus = assert_addr ? addr_scratch : 'hz;
-    assign reset_vec = 16'h0000;
 
     localparam[15:0]
         //control operations
@@ -94,12 +93,22 @@ module control(
         lde_p_hl = 8'h5e,
         ldl_p_hl = 8'h6e,
         lda_p_hl = 8'h7e,
+        ldb_p_hl = 8'h46,
+        ldd_p_hl = 8'h56,
+        ldh_p_hl = 8'h66,
         //reset vectors
-        rst_0 = 8'hc7;
-
+        rst_0h = 8'hc7,
+        rst_10h = 8'hd7,
+        rst_20h = 8'he7,
+        rst_30h = 8'hf7,
+        rst_08h = 8'hcf,
+        rst_18h = 8'hdf,
+        rst_28h = 8'hef,
+        rst_38h = 8'hff;
 
     always @(posedge clk, posedge rst) begin
         if(rst) begin
+            reset_vec <= 16'h0000;
             current_state <= reset;
         end
         else begin
@@ -145,6 +154,7 @@ module control(
         end
         inc_pc_a: begin
             gen_wr <= 0;
+            a_wr <= 0;
             abuf_oe <= 0;
             abuf_bypass <= 1;
             mem_oe <= 0;
@@ -219,12 +229,71 @@ module control(
                     return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
+                lda_p_hl: begin
+                    ld_reg <= reg_a;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
                 ldc_p_hl: begin
                     ld_reg <= reg_c;
                     ptr_reg <= regs_hl;
                     next_state <= load_byte_a16_a;
                 end
-                rst_0: begin
+                lde_p_hl: begin
+                    ld_reg <= reg_e;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
+                ldl_p_hl: begin
+                    ld_reg <= reg_l;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
+                ldb_p_hl: begin
+                    ld_reg <= reg_b;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
+                ldd_p_hl: begin
+                    ld_reg <= reg_d;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
+                ldh_p_hl: begin
+                    ld_reg <= reg_h;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end                
+                rst_0h: begin
+                    reset_vec <= 16'h0000;
+                    next_state <= reset;
+                end
+                rst_10h: begin
+                    reset_vec <= 16'h0010;
+                    next_state <= reset;
+                end
+                rst_20h: begin
+                    reset_vec <= 16'h0020;
+                    next_state <= reset;
+                end
+                rst_30h: begin
+                    reset_vec <= 16'h0030;
+                    next_state <= reset;
+                end
+                rst_08h: begin
+                    reset_vec <= 16'h0008;
+                    next_state <= reset;
+                end
+                rst_18h: begin
+                    reset_vec <= 16'h0018;
+                    next_state <= reset;
+                end
+                rst_28h: begin
+                    reset_vec <= 16'h0028;
+                    next_state <= reset;
+                end
+                rst_38h: begin
+                    reset_vec <= 16'h0038;
                     next_state <= reset;
                 end
                 default: begin
@@ -329,7 +398,10 @@ module control(
             endcase
         end
         load_byte_a16_c: begin
-            gen_wr <= 1;
+            case(ld_reg)
+                reg_b, reg_d, reg_h, reg_c, reg_e, reg_l: gen_wr <= 1;
+                reg_a: a_wr <= 1;
+            endcase
             mem_oe <= 1;
             return_state <= fetch_a;
             next_state <= inc_pc_a;
