@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/cpu_top_tb/data_bus_tb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">data_bus_tb[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_bus_tb[7:0]</obj_property>
@@ -43,12 +43,6 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/cpu_top_tb/cpu/regfile/a_reg/DflipFlop_0_Q" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
-      <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
-      <obj_property name="label">a reg</obj_property>
-   </wvobject>
    <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\c-l /register_8bit_0/DflipFlop_0/q" type="array" db_ref_id="1">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">q[7:0]</obj_property>
@@ -67,6 +61,12 @@
       <obj_property name="ObjectShortName">q[7:0]</obj_property>
       <obj_property name="label">l reg</obj_property>
    </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/a_reg/DflipFlop_0_Q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
+      <obj_property name="label">a reg</obj_property>
+   </wvobject>
    <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_regs_16_0/\b-h /register_8bit_0/DflipFlop_0/q" type="array" db_ref_id="1">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">q[7:0]</obj_property>
@@ -84,5 +84,101 @@
       <obj_property name="ElementShortName">q[7:0]</obj_property>
       <obj_property name="ObjectShortName">q[7:0]</obj_property>
       <obj_property name="label">h reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus34" type="vbus" db_ref_id="1">
+      <obj_property name="label">pc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/cpu_top_tb/cpu/regfile/pc/register_8bit_1/DflipFlop_0_Q" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/regfile/pc/register_8bit_0/DflipFlop_0_Q" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DflipFlop_0_Q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DflipFlop_0_Q[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/current_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/addrbuf/addr_bus_ext" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus_ext[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus_ext[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/addrbuf/addr_bus_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus_int[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus_int[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/addrbuf/addr_bus_scratch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_bus_scratch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus_scratch[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group52" type="group">
+      <obj_property name="label">state names</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/reset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reset[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reset[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/reset_pc_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_pc_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reset_pc_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/reset_pc_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_pc_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reset_pc_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/inc_pc_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">inc_pc_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">inc_pc_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/inc_pc_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">inc_pc_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">inc_pc_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/fetch_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fetch_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fetch_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/fetch_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fetch_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fetch_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/fetch_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fetch_c[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fetch_c[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">decode_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">decode_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/load_byte_imm_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">load_byte_imm_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">load_byte_imm_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/load_byte_imm_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">load_byte_imm_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">load_byte_imm_b[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/load_byte_imm_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">load_byte_imm_c[15:0]</obj_property>
+         <obj_property name="ObjectShortName">load_byte_imm_c[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/load_byte_a16_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">load_byte_a16_a[15:0]</obj_property>
+         <obj_property name="ObjectShortName">load_byte_a16_a[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cpu_top_tb/cpu/ctl/load_byte_a16_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">load_byte_a16_b[15:0]</obj_property>
+         <obj_property name="ObjectShortName">load_byte_a16_b[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/gen_oe_conn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_oe_conn</obj_property>
+      <obj_property name="ObjectShortName">gen_oe_conn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_LR_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_LR_sel</obj_property>
+      <obj_property name="ObjectShortName">gen_LR_sel</obj_property>
    </wvobject>
 </wave_config>

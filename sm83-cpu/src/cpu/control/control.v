@@ -5,7 +5,7 @@ module control(
     input rst,
 
     inout[15:0] addr_bus,
-	 input[7:0] data_bus,
+	input[7:0] data_bus,
 
     output reg pc_oe,
     output reg pc_wr,
@@ -16,10 +16,15 @@ module control(
 
     output reg a_wr,
     output reg a_oe,
+    output reg gen_16b,
     output reg gen_oe,
     output reg gen_wr,
     output reg gen_lr_sel,
     output reg[2:0] gen_sel,
+
+    output reg abuf_bypass,
+    output reg abuf_latch,
+    output reg abuf_oe,
 
     output reg mem_cs,
     output reg mem_oe
@@ -31,6 +36,7 @@ module control(
     reg[15:0] current_state, next_state, return_state;
     reg assert_addr;
     reg[3:0] ld_reg;
+    reg [1:0] ptr_reg;
 
     localparam[1:0]
         //gen_sel enums
@@ -66,9 +72,12 @@ module control(
         fetch_b = 16'hff06,
 	    fetch_c = 16'hff07,
         decode_a = 16'hff08,
-        load_byte_a = 16'hff09,
-        load_byte_b = 16'hff0a,
-        load_byte_c = 16'hff0b;
+        load_byte_imm_a = 16'hff09,
+        load_byte_imm_b = 16'hff0a,
+        load_byte_imm_c = 16'hff0b,
+        load_byte_a16_a = 16'hff0c,
+        load_byte_a16_b = 16'hff0d,
+        load_byte_a16_c = 16'hff0e;
 
     localparam[7:0]
         //opcodes--------------|
@@ -79,8 +88,14 @@ module control(
         lda_d8 = 8'h3e,
         ldb_d8 = 8'h06,
         ldd_d8 = 8'h16,
-        ldh_d8 = 8'h26;
-
+        ldh_d8 = 8'h26,
+        //load 8-bit data from [hl]
+        ldc_p_hl = 8'h4e,
+        lde_p_hl = 8'h5e,
+        ldl_p_hl = 8'h6e,
+        lda_p_hl = 8'h7e,
+        //reset vectors
+        rst_0 = 8'hc7;
 
 
     always @(posedge clk, posedge rst) begin
@@ -100,6 +115,7 @@ module control(
             mem_oe <= 0;
             a_oe <= 0;
             a_wr <= 0;
+            gen_16b <= 0;
             gen_oe <= 0;
             gen_wr <= 0;
             gen_lr_sel <= 0;
@@ -110,6 +126,9 @@ module control(
             pc_ld16 <= 0;
             pc_inc_en <= 0;
             pc_inc_tap_en <= 0;
+            abuf_bypass <= 1;
+            abuf_oe <= 0;
+            abuf_latch <= 0;
             assert_addr <= 0;
             next_state <= reset_pc_a;
         end
@@ -125,6 +144,9 @@ module control(
             next_state <= fetch_a;
         end
         inc_pc_a: begin
+            gen_wr <= 0;
+            abuf_oe <= 0;
+            abuf_bypass <= 1;
             mem_oe <= 0;
             pc_oe <= 1;
             pc_inc_tap_en <= 1;
@@ -159,42 +181,51 @@ module control(
             next_state <= decode_a;
         end
         decode_a: begin
+            pc_oe <= 0;
             case(opcode)
                 ldc_d8: begin
                     ld_reg <= reg_c;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     //increment pc to access the following byte
                     next_state <= inc_pc_a;
                 end
                 lde_d8: begin
                     ld_reg <= reg_e;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
                 ldl_d8: begin
                     ld_reg <= reg_l;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
                 lda_d8: begin
                     ld_reg <= reg_a;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
                 ldb_d8: begin
                     ld_reg <= reg_b;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
                 ldd_d8: begin
                     ld_reg <= reg_d;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end
                 ldh_d8: begin
                     ld_reg <= reg_h;
-                    return_state <= load_byte_a;
+                    return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
+                end
+                ldc_p_hl: begin
+                    ld_reg <= reg_c;
+                    ptr_reg <= regs_hl;
+                    next_state <= load_byte_a16_a;
+                end
+                rst_0: begin
+                    next_state <= reset;
                 end
                 default: begin
                     return_state <= fetch_a;
@@ -202,69 +233,104 @@ module control(
 					end
             endcase
         end
-        load_byte_a: begin //get the memory to assert the byte pointed to by pc
+        load_byte_imm_a: begin //get the memory to assert the byte pointed to by pc
             pc_oe <= 1;
             mem_oe <= 1;
             pc_inc_en <= 0;
             pc_inc_tap_en <= 0;
-            next_state <= load_byte_b;
+            next_state <= load_byte_imm_b;
         end
-        load_byte_b: begin
+        load_byte_imm_b: begin
             case(ld_reg)
                 reg_a: begin
                     a_wr <= 1;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end
                 reg_b: begin
                     gen_wr <= 1;
                     gen_sel <= regs_bc;
                     gen_lr_sel <= 0;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end                   
                 reg_c: begin
                     gen_wr <= 1;
                     gen_sel <= regs_bc;
                     gen_lr_sel <= 1;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end
                 reg_d: begin
                     gen_wr <= 1;
                     gen_sel <= regs_de;
                     gen_lr_sel <= 0;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end   
                 reg_e: begin
                     gen_wr <= 1;
                     gen_sel <= regs_de;
                     gen_lr_sel <= 1;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end   
                 reg_h: begin
                     gen_wr <= 1;
                     gen_sel <= regs_hl;
                     gen_lr_sel <= 0;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end   
                 reg_l: begin
                     gen_wr <= 1;
                     gen_sel <= regs_hl;
                     gen_lr_sel <= 1;
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
                 end                   
             default: begin
-                    next_state <= load_byte_c;
+                    next_state <= load_byte_imm_c;
             end
             endcase
         end
-        load_byte_c: begin
+        load_byte_imm_c: begin
             case(ld_reg)
                 reg_a: begin
                     a_wr <= 0;
                 end
+                //could I be doing something like this in part a?
+                //could potentially reduce the size of the switch by a lot
                 reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: begin
                     gen_wr <= 0;
                 end
             endcase
+            return_state <= fetch_a;
+            next_state <= inc_pc_a;
+        end
+        load_byte_a16_a: begin
+            //assert the pointer on the address bus, and latch it into the buffer
+            mem_oe <= 0;
+            gen_oe <= 1;
+            gen_16b <= 1;
+            gen_sel <= ptr_reg;
+            abuf_latch <= 0;
+            abuf_bypass <= 0;
+            next_state <= load_byte_a16_b;
+        end
+        load_byte_a16_b: begin
+            //keep asserting the address, load the byte into the register
+            abuf_oe <= 1;
+            gen_16b <= 0;
+            abuf_latch <= 1;
+            gen_oe <= 0;
+            next_state <= load_byte_a16_c;
+            case(ld_reg)
+                reg_b, reg_c: gen_sel <= 0;
+                reg_d, reg_e: gen_sel <= 1;
+                reg_h, reg_l: gen_sel <= 2;
+            endcase
+            case(ld_reg)
+                reg_b, reg_d, reg_h: gen_lr_sel <= 0;
+                reg_c, reg_e, reg_l: gen_lr_sel <= 1;
+            endcase
+        end
+        load_byte_a16_c: begin
+            gen_wr <= 1;
+            mem_oe <= 1;
             return_state <= fetch_a;
             next_state <= inc_pc_a;
         end
