@@ -193,7 +193,7 @@ module decode(
                     next_state <= reset;
                 end
                 jp_a16: begin
-                    ld_reg <= reg_pch;
+                    ld_reg <= reg_pcl;
                     return_state <= load_byte_imm_a;
                     next_state <= inc_pc_a;
                 end

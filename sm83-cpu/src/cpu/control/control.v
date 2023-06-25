@@ -233,11 +233,11 @@ module control(
             case(ld_reg)
                 reg_a: a_wr <= 0;
                 reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: gen_wr <= 0;
-                reg_pch: begin 
-                    ld_reg <= reg_pcl;
+                reg_pcl: begin 
+                    ld_reg <= reg_pch;
                     return_state <= load_byte_imm_a;
                 end
-                reg_pcl: next_state <= reset;
+                reg_pch: next_state <= reset;
             endcase
         end
         load_byte_a16_a: begin
