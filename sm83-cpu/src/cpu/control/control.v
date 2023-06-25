@@ -30,6 +30,10 @@ module control(
     output reg mem_oe
 );
 
+    //arbitrary constants
+    wire const1;
+    assign const1 = 1;
+
     reg[7:0] opcode;
     reg[15:0] addr_scratch;
     reg[7:0] scratch;
@@ -60,6 +64,7 @@ module control(
 
     assign addr_bus = assert_addr ? addr_scratch : 'hz;
 
+    //local params must aggree with those in decode.v
     localparam[15:0]
         //control operations
 		reset = 16'hff00,
@@ -78,33 +83,23 @@ module control(
         load_byte_a16_b = 16'hff0d,
         load_byte_a16_c = 16'hff0e;
 
-    localparam[7:0]
-        //opcodes--------------|
-        //8 bit immediate loads
-        ldc_d8 = 8'h0e,
-        lde_d8 = 8'h1e,
-        ldl_d8 = 8'h2e,
-        lda_d8 = 8'h3e,
-        ldb_d8 = 8'h06,
-        ldd_d8 = 8'h16,
-        ldh_d8 = 8'h26,
-        //load 8-bit data from [hl]
-        ldc_p_hl = 8'h4e,
-        lde_p_hl = 8'h5e,
-        ldl_p_hl = 8'h6e,
-        lda_p_hl = 8'h7e,
-        ldb_p_hl = 8'h46,
-        ldd_p_hl = 8'h56,
-        ldh_p_hl = 8'h66,
-        //reset vectors
-        rst_0h = 8'hc7,
-        rst_10h = 8'hd7,
-        rst_20h = 8'he7,
-        rst_30h = 8'hf7,
-        rst_08h = 8'hcf,
-        rst_18h = 8'hdf,
-        rst_28h = 8'hef,
-        rst_38h = 8'hff;
+        //connections to decode module
+        reg decode_en;
+        wire[3:0] decode_rtn_ld_reg;
+        wire[1:0] decode_rtn_ptr_reg;
+        wire[15:0] decode_rtn_next_state;
+        wire[15:0] decode_rtn_return_state;
+        wire[15:0] decode_rtn_reset_vec;
+
+        decode inst_decode(
+            .en(decode_en),
+            .opcode(opcode),
+            .ld_reg(decode_rtn_ld_reg),
+            .ptr_reg(decode_rtn_ptr_reg),
+            .return_state(decode_rtn_return_state),
+            .next_state(decode_rtn_next_state),
+            .reset_vec(decode_rtn_reset_vec)
+        );
 
     always @(posedge clk, posedge rst) begin
         if(rst) begin
@@ -120,6 +115,7 @@ module control(
     next_state <= current_state; //when no case is satisfied, remain on current state
     case(current_state)
         reset: begin
+            decode_en <= 0;
             mem_cs <= 1;
             mem_oe <= 0;
             a_oe <= 0;
@@ -188,121 +184,21 @@ module control(
         end
         fetch_c: begin
             opcode <= data_bus;
+            decode_en <= 1;
             next_state <= decode_a;
         end
         decode_a: begin
             pc_oe <= 0;
-            case(opcode)
-                ldc_d8: begin
-                    ld_reg <= reg_c;
-                    return_state <= load_byte_imm_a;
-                    //increment pc to access the following byte
-                    next_state <= inc_pc_a;
-                end
-                lde_d8: begin
-                    ld_reg <= reg_e;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                ldl_d8: begin
-                    ld_reg <= reg_l;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                lda_d8: begin
-                    ld_reg <= reg_a;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                ldb_d8: begin
-                    ld_reg <= reg_b;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                ldd_d8: begin
-                    ld_reg <= reg_d;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                ldh_d8: begin
-                    ld_reg <= reg_h;
-                    return_state <= load_byte_imm_a;
-                    next_state <= inc_pc_a;
-                end
-                lda_p_hl: begin
-                    ld_reg <= reg_a;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                ldc_p_hl: begin
-                    ld_reg <= reg_c;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                lde_p_hl: begin
-                    ld_reg <= reg_e;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                ldl_p_hl: begin
-                    ld_reg <= reg_l;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                ldb_p_hl: begin
-                    ld_reg <= reg_b;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                ldd_p_hl: begin
-                    ld_reg <= reg_d;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end
-                ldh_p_hl: begin
-                    ld_reg <= reg_h;
-                    ptr_reg <= regs_hl;
-                    next_state <= load_byte_a16_a;
-                end                
-                rst_0h: begin
-                    reset_vec <= 16'h0000;
-                    next_state <= reset;
-                end
-                rst_10h: begin
-                    reset_vec <= 16'h0010;
-                    next_state <= reset;
-                end
-                rst_20h: begin
-                    reset_vec <= 16'h0020;
-                    next_state <= reset;
-                end
-                rst_30h: begin
-                    reset_vec <= 16'h0030;
-                    next_state <= reset;
-                end
-                rst_08h: begin
-                    reset_vec <= 16'h0008;
-                    next_state <= reset;
-                end
-                rst_18h: begin
-                    reset_vec <= 16'h0018;
-                    next_state <= reset;
-                end
-                rst_28h: begin
-                    reset_vec <= 16'h0028;
-                    next_state <= reset;
-                end
-                rst_38h: begin
-                    reset_vec <= 16'h0038;
-                    next_state <= reset;
-                end
-                default: begin
-                    return_state <= fetch_a;
-                    next_state <= inc_pc_a;
-					end
-            endcase
+            //get next state from decode logic
+            ld_reg <= decode_rtn_ld_reg;
+            ptr_reg <= decode_rtn_ptr_reg;
+            reset_vec <= decode_rtn_reset_vec;
+            return_state <= decode_rtn_return_state;
+            next_state <= decode_rtn_next_state;
         end
-        load_byte_imm_a: begin //get the memory to assert the byte pointed to by pc
+        load_byte_imm_a: begin 
+            //get the memory to assert the byte pointed to by pc
+            decode_en <= 0;
             pc_oe <= 1;
             mem_oe <= 1;
             pc_inc_en <= 0;
@@ -311,58 +207,25 @@ module control(
         end
         load_byte_imm_b: begin
             case(ld_reg)
-                reg_a: begin
-                    a_wr <= 1;
-                    next_state <= load_byte_imm_c;
-                end
-                reg_b: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_bc;
-                    gen_lr_sel <= 0;
-                    next_state <= load_byte_imm_c;
-                end                   
-                reg_c: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_bc;
-                    gen_lr_sel <= 1;
-                    next_state <= load_byte_imm_c;
-                end
-                reg_d: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_de;
-                    gen_lr_sel <= 0;
-                    next_state <= load_byte_imm_c;
-                end   
-                reg_e: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_de;
-                    gen_lr_sel <= 1;
-                    next_state <= load_byte_imm_c;
-                end   
-                reg_h: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_hl;
-                    gen_lr_sel <= 0;
-                    next_state <= load_byte_imm_c;
-                end   
-                reg_l: begin
-                    gen_wr <= 1;
-                    gen_sel <= regs_hl;
-                    gen_lr_sel <= 1;
-                    next_state <= load_byte_imm_c;
-                end                   
-            default: begin
-                    next_state <= load_byte_imm_c;
-            end
+                reg_a: a_wr <= 1;
+                reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: gen_wr <= 1;
             endcase
+            case(ld_reg)
+                reg_b, reg_c: gen_sel <= regs_bc;
+                reg_d, reg_e: gen_sel <= regs_de;
+                reg_h, reg_l: gen_sel <= regs_hl;
+            endcase
+            case(ld_reg)
+                reg_b, reg_d, reg_h: gen_lr_sel <= 0;
+                reg_c, reg_e, reg_l: gen_lr_sel <= 1;
+            endcase
+            next_state <= load_byte_imm_c;
         end
         load_byte_imm_c: begin
             case(ld_reg)
                 reg_a: begin
                     a_wr <= 0;
                 end
-                //could I be doing something like this in part a?
-                //could potentially reduce the size of the switch by a lot
                 reg_b, reg_c, reg_d, reg_e, reg_h, reg_l: begin
                     gen_wr <= 0;
                 end
@@ -372,6 +235,7 @@ module control(
         end
         load_byte_a16_a: begin
             //assert the pointer on the address bus, and latch it into the buffer
+            decode_en <= 0;
             mem_oe <= 0;
             gen_oe <= 1;
             gen_16b <= 1;
@@ -386,7 +250,6 @@ module control(
             gen_16b <= 0;
             abuf_latch <= 1;
             gen_oe <= 0;
-            next_state <= load_byte_a16_c;
             case(ld_reg)
                 reg_b, reg_c: gen_sel <= 0;
                 reg_d, reg_e: gen_sel <= 1;
@@ -396,6 +259,7 @@ module control(
                 reg_b, reg_d, reg_h: gen_lr_sel <= 0;
                 reg_c, reg_e, reg_l: gen_lr_sel <= 1;
             endcase
+            next_state <= load_byte_a16_c;
         end
         load_byte_a16_c: begin
             case(ld_reg)
