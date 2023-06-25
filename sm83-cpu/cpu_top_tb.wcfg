@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="36" />
    <wvobject fp_name="/cpu_top_tb/data_bus_tb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">data_bus_tb[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_bus_tb[7:0]</obj_property>
@@ -101,6 +101,14 @@
       <obj_property name="ElementShortName">current_state[15:0]</obj_property>
       <obj_property name="ObjectShortName">current_state[15:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/return_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">return_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">return_state[15:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/cpu_top_tb/cpu/addrbuf/addr_bus_ext" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">addr_bus_ext[15:0]</obj_property>
       <obj_property name="ObjectShortName">addr_bus_ext[15:0]</obj_property>
@@ -177,8 +185,52 @@
       <obj_property name="ElementShortName">gen_oe_conn</obj_property>
       <obj_property name="ObjectShortName">gen_oe_conn</obj_property>
    </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_reg_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_reg_sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">gen_reg_sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/gen_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">gen_sel[2:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_LR_sel" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">gen_LR_sel</obj_property>
       <obj_property name="ObjectShortName">gen_LR_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/regfile/gen_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_wr</obj_property>
+      <obj_property name="ObjectShortName">gen_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/inst_decode/ptr_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ptr_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ptr_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/ptr_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ptr_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ptr_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_rtn_reset_vec" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_rtn_reset_vec[15:0]</obj_property>
+      <obj_property name="ObjectShortName">decode_rtn_reset_vec[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_rtn_ld_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_rtn_ld_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">decode_rtn_ld_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_rtn_next_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_rtn_next_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">decode_rtn_next_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_rtn_return_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_rtn_return_state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">decode_rtn_return_state[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/cpu/ctl/decode_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decode_en</obj_property>
+      <obj_property name="ObjectShortName">decode_en</obj_property>
    </wvobject>
 </wave_config>
