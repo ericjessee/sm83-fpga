@@ -2,7 +2,7 @@ This repo is for my sm83-fpga project.
 
 Very much a work in progress.
 
-Based around an Alchitry "Mojo" fpga board. It's old and discontinued, but I have one, and don't want to buy something else(yet).
+Based around an Alchitry "Mojo" fpga board. It's old and discontinued, but I have one, and don't want to buy something else.
 
 The point of this project isn't so much perfectly accurate fpga implementation of the gameboy-
 more so an attempt to reverse engineer the design based on what I know it should do based on context clues, as a learning experience.
