@@ -10,9 +10,16 @@ module cpu_top_tb();
     wire mem_cs_conn;
     wire[7:0] mem_out;
 
+    wire wram_oe_conn;
+    wire wram_cs_conn;
+    wire wram_wr_conn;
+    wire[7:0] wram_out;
+
     //arbitrary constants
     wire const1;
     assign const1 = 1;
+    wire const0;
+    assign const0 = 0;
 
     //rom output is not tri state
     assign data_bus_tb = mem_oe_conn ? mem_out : 'hz;
@@ -23,6 +30,16 @@ module cpu_top_tb();
         .addra(addr_bus_tb),
         .douta(mem_out)
     ); 
+
+    work_ram wram(
+        .clka(clk),
+        .rsta(const0),
+        .ena(const1),
+        .wea(wram_wr_conn),
+        .addra(ar),
+        .dina(),
+        .douta()
+    );
 
     cpu_top cpu(
         .clk(clk),
