@@ -5,10 +5,11 @@ module cpu_top_tb();
 
     wire[7:0] data_bus_tb;
     wire[15:0] addr_bus_tb;
+    wire[15:0] decoded_addr_bus_tb;
 
-    wire mem_oe_conn;
-    wire mem_cs_conn;
-    wire[7:0] mem_out;
+    wire rom_oe_conn;
+    wire rom_cs_conn;
+    wire[7:0] rom_out;
 
     wire wram_oe_conn;
     wire wram_cs_conn;
@@ -21,24 +22,34 @@ module cpu_top_tb();
     wire const0;
     assign const0 = 0;
 
-    //rom output is not tri state
-    assign data_bus_tb = mem_oe_conn ? mem_out : 'hz;
+    //memory ip outputs are not tri state
+    assign data_bus_tb = rom_oe_conn ? rom_out : 'hz;
+    assign data_bus_tb = wram_oe_conn ? wram_out : 'hz;
 
     bootrom rom(
         .clka(clk),
         .ena(const1),
-        .addra(addr_bus_tb),
-        .douta(mem_out)
+        .addra(decoded_addr_bus_tb),
+        .douta(rom_out)
     ); 
 
     work_ram wram(
         .clka(clk),
         .rsta(const0),
         .ena(const1),
-        .wea(wram_wr_conn),
-        .addra(ar),
-        .dina(),
-        .douta()
+        .wea(const0), //TBD
+        .addra(decoded_addr_bus_tb),
+        .dina(data_bus_tb),
+        .douta(wram_out)
+    );
+
+    address_decode addr_dec(
+        .mem_oe(mem_oe_conn),
+        .mem_cs(mem_cs_conn),
+        .addr(addr_bus_tb),
+        .decoded_addr(decoded_addr_bus_tb),
+        .rom_oe(rom_oe_conn),
+        .wram_oe(wram_oe_conn)
     );
 
     cpu_top cpu(
