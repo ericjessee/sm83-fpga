@@ -49,3 +49,7 @@ wram.veo
 blk_mem_gen_v7_3_readme.txt
 blk_mem_gen_v7_3_vinfo.html
 pg058-blk-mem-gen.pdf
+address_decode_tb_beh.prj
+address_decode_tb_isim_beh.exe
+address_decode_tb_isim_beh.wdb
+edit_wram.tcl
