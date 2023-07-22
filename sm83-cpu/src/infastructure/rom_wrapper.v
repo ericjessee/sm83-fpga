@@ -9,13 +9,13 @@ module rom_wrapper(
     wire[15:0] addr_translate;
 
     //rom output is not tri state
-    //assign dout = oe ? rom_data : 'hz;
+    assign dout = oe ? rom_data : 'hz;
     
     bootrom rom(
         .clka(clk),
         .ena(en),
         .addra(addr),
-        .douta(dout)
+        .douta(rom_data)
     );
 
 endmodule
