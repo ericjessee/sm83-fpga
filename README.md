@@ -27,3 +27,7 @@ Thinking about getting a uart going, so we can talk to the atmel microcontroller
 It's starting to feel like the control unit is just a massive state machine that's running the whole show-- i guess that's 
 what it's supposed to be, but it's starting to feel cumbersome. Perhaps some actions could be broken into seperate "mini state machines"
 There needs to be some way to actually pipeline things.. no way to do that with the current set up. More research required
+
+current status: 
+I instantiated the wram, with a wrapper to take care of the select logic and address decode. Am able read bytes from memory and rom dependent on address now. Next: implement memory store, and think about how to load program code into ram faster rather than having to rebuild the bootrom every time. 
+in the short term though, keep implementing opcodes now that we have ram.
