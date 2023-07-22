@@ -190,11 +190,11 @@ module register_16bit(addr_out, out_1, out_2, wr, oe, rst, clk, data_in, addr_in
   
   assign out_2 = Multiplexer_0_out[15:8];
   assign out_1 = Multiplexer_0_out[7:0];
-  Demultiplexer2 #(8) Demultiplexer_0(Demultiplexer_0_out_0, Demultiplexer_0_out_1, data_in, loadh);
-  assign Splitter_2_cmb = {Demultiplexer_0_out_1,Demultiplexer_0_out_0};
   assign not_0_out = ~loadh;
   Demultiplexer2 Demultiplexer_1(Demultiplexer_1_out_0, Demultiplexer_1_out_1, wr, not_0_out);
   assign Splitter_5_cmb = {Demultiplexer_1_out_1,Demultiplexer_1_out_0};
+  Demultiplexer2 #(8) Demultiplexer_0(Demultiplexer_0_out_0, Demultiplexer_0_out_1, data_in, loadh);
+  assign Splitter_2_cmb = {Demultiplexer_0_out_1,Demultiplexer_0_out_0};
   assign Splitter_4_cmb = {wr,wr};
 endmodule
 
