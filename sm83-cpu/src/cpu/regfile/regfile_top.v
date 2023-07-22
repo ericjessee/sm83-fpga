@@ -178,14 +178,14 @@ module register_16bit(addr_out, out_1, out_2, wr, oe, rst, clk, data_in, addr_in
   input [15:0] addr_in;
   wire not_0_out, Demultiplexer_1_out_0, Demultiplexer_1_out_1;
   wire [1:0] Multiplexer_1_out, Splitter_5_cmb, Splitter_4_cmb;
-  wire [7:0] register_8bit_0_out, register_8bit_1_out, Demultiplexer_0_out_0, Demultiplexer_0_out_1;
+  wire [7:0] low_byte_out, high_byte_out, Demultiplexer_0_out_0, Demultiplexer_0_out_1;
   wire [15:0] Splitter_0_cmb, Multiplexer_0_out, Splitter_2_cmb;
   Multiplexer2 #(2) Multiplexer_1(Multiplexer_1_out, Splitter_5_cmb, Splitter_4_cmb, load16);
   
-  register_8bit register_8bit_0(register_8bit_0_out, Multiplexer_1_out[1], rst, clk, Multiplexer_0_out[7:0], oe);
-  assign Splitter_0_cmb = {register_8bit_1_out,register_8bit_0_out};
+  register_8bit low_byte(low_byte_out, Multiplexer_1_out[1], rst, clk, Multiplexer_0_out[7:0], oe);
+  assign Splitter_0_cmb = {high_byte_out,low_byte_out};
   assign addr_out = Splitter_0_cmb;
-  register_8bit register_8bit_1(register_8bit_1_out, Multiplexer_1_out[0], rst, clk, Multiplexer_0_out[15:8], oe);
+  register_8bit high_byte(high_byte_out, Multiplexer_1_out[0], rst, clk, Multiplexer_0_out[15:8], oe);
   Multiplexer2 #(16) Multiplexer_0(Multiplexer_0_out, Splitter_2_cmb, addr_in, load16);
   
   assign out_2 = Multiplexer_0_out[15:8];
