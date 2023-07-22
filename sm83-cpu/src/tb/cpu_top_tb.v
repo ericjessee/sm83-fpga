@@ -31,7 +31,7 @@ module cpu_top_tb();
         .douta(mem_out)
     ); 
 
-    work_ram wram(
+    wram work_ram(
         .clka(clk),
         .rsta(const0),
         .ena(const1),
