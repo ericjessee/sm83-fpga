@@ -70,3 +70,4 @@ pg058-blk-mem-gen.pdf
 cpu_top_isim_beh.exe
 cpu_top_tb_isim_beh1.wdb
 edit_wram.tcl
+rom.coe
