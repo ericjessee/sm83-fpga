@@ -67,3 +67,6 @@ wram.veo
 blk_mem_gen_v7_3_readme.txt
 blk_mem_gen_v7_3_vinfo.html
 pg058-blk-mem-gen.pdf
+cpu_top_isim_beh.exe
+cpu_top_tb_isim_beh1.wdb
+edit_wram.tcl
