@@ -21,24 +21,23 @@ module cpu_top_tb();
     wire const0;
     assign const0 = 0;
 
-    //rom output is not tri state
-    assign data_bus_tb = mem_oe_conn ? mem_out : 'hz;
+    rom_wrapper bootrom(
+        .clk(clk),
+        .en(const1),
+        .oe(mem_oe_conn),
+        .addr(addr_bus_tb),
+        .dout(data_bus_tb)
+    );
 
-    bootrom rom(
-        .clka(clk),
-        .ena(const1),
-        .addra(addr_bus_tb),
-        .douta(mem_out)
-    ); 
-
-    work_ram wram(
-        .clka(clk),
-        .rsta(const0),
-        .ena(const1),
-        .wea(wram_wr_conn),
-        .addra(ar),
-        .dina(),
-        .douta()
+    wram_wrapper wram(
+        .clk(clk),
+        .rst(rst),
+        .en(const1),
+        .we(const0),
+        .oe(mem_oe_conn),
+        .addr(addr_bus_tb),
+        .din(data_bus_tb),
+        .dout(data_bus_tb)
     );
 
     cpu_top cpu(
