@@ -15,7 +15,7 @@ module wram_wrapper(
     wire[7:0] wram_dout;
     assign dout = (oe & in_range) ? wram_dout : 'hz;
 
-    //this decode step isn't working. Need a sequential function?
+
     wire[15:0] addr_translate;
     assign addr_translate = addr & (16'h3fff);
 
