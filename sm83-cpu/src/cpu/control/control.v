@@ -193,6 +193,7 @@ module control(
         end
         decode_a: begin
             pc_oe <= 0;
+            mem_oe <= 0;
             //get next state from decode logic
             ld_reg <= decode_rtn_ld_reg;
             ptr_reg <= decode_rtn_ptr_reg;

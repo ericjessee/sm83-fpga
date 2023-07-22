@@ -1,22 +1,32 @@
 module wram_wrapper(
-    .clk
-    .rst
-    .en
-    .we
-    .addrin
-    .addrout    
+    input clk,
+    input rst,
+    input en,
+    input we,
+    input oe,
+    input[15:0] addr,
+    input[7:0] din,
+    output[7:0] dout
 );
 
-//UNFINISHED
+    wire in_range;
+    assign in_range = (addr >= 'hc000) & (addr <= 'hdfff);
+
+    wire[7:0] wram_dout;
+    assign dout = (oe & in_range) ? wram_dout : 'hz;
+
+    //this decode step isn't working. Need a sequential function?
+    wire[15:0] addr_translate;
+    assign addr_translate = addr & (16'h3fff);
 
     wram work_ram(
         .clka(clk),
-        .rsta(const0),
-        .ena(const1),
-        .wea(wram_wr_conn),
-        .addra(ar),
-        .dina(),
-        .douta()
+        .rsta(rst),
+        .ena(en),
+        .wea(we),
+        .addra(addr_translate),
+        .dina(din),
+        .douta(wram_dout)
     );
 
 endmodule

@@ -29,6 +29,17 @@ module cpu_top_tb();
         .dout(data_bus_tb)
     );
 
+    wram_wrapper wram(
+        .clk(clk),
+        .rst(rst),
+        .en(const1),
+        .we(const0),
+        .oe(mem_oe_conn),
+        .addr(addr_bus_tb),
+        .din(data_bus_tb),
+        .dout(data_bus_tb)
+    );
+
     cpu_top cpu(
         .clk(clk),
         .rst(rst),
