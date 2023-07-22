@@ -152,7 +152,7 @@ module gen_regs_16(out_16b, out_8b, in_16b, \16b_mode , in_8b, LR_sel, clk, rst,
   Multiplexer2 #(8) Multiplexer_2(Multiplexer_2_out, \b-h_out , \c-l_out , LR_sel);
   assign TriState_0_out = (output_sel_out_1!=0) ? Multiplexer_2_out : 8'b?;
   assign out_8b = TriState_0_out;
-  assign Splitter_0_cmb = {\c-l_out ,\b-h_out };
+  assign Splitter_0_cmb = {\b-h_out ,\c-l_out };
   assign TriState_1_out = (output_sel_out_0!=0) ? Splitter_0_cmb : 16'b?;
   assign out_16b = TriState_1_out;
   Multiplexer2 #(3) L_ctl(L_ctl_out, const_0, Splitter_2_cmb, or_0_out);
@@ -162,8 +162,8 @@ module gen_regs_16(out_16b, out_8b, in_16b, \16b_mode , in_8b, LR_sel, clk, rst,
   assign or_1_out = \16b_mode  | LR_sel;
   assign not_0_out = ~LR_sel;
   assign or_0_out = \16b_mode  | not_0_out;
-  Multiplexer2 #(8) \16_8_sel_1 (\16_8_sel_1_out , in_8b, in_16b[15:8], \16b_mode );
-  Multiplexer2 #(8) \16_8_sel (\16_8_sel_out , in_8b, in_16b[7:0], \16b_mode );
+  Multiplexer2 #(8) \16_8_sel_1 (\16_8_sel_1_out , in_8b, in_16b[7:0], \16b_mode );
+  Multiplexer2 #(8) \16_8_sel (\16_8_sel_out , in_8b, in_16b[15:8], \16b_mode );
   assign not_1_out = ~\16b_mode ;
   
   assign const_0 = 3'b000;
